@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body::after {
+  content: " ";
+  background-image: linear-gradient(344deg, rgba(255, 0, 0, 0.3) 0%, rgba(255, 0, 0, 0.3) 100%), url("img/akatsuki.webp");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.header {
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+#survey-form {
+  min-width: 300px;
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 20px 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+#name-label {
+  margin-top: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+textarea {
+  height: 110px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  color: white;
+  background-color: lightgreen;
+}

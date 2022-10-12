@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form Akatsuki</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Akatsuki Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-grup">
+          <label for="name" id="name-label">
+            Nama
+            <input type="text" name="name-label" id="name" required placeholder="Enter Your Name" />
+          </label>
+          <label for="email" id="email-label">
+            Email
+            <input type="email" name="email-label" id="email" required placeholder="Enter Your Email" />
+          </label>
+          <label for="number" id="number-label">
+            Age
+            <input type="number" name="number-label" id="number" required placeholder="Age" min="10" max="50" />
+          </label>
+          <label for="number" id="dropdown-label">
+            Most liked character?
+            <select name="select" id="dropdown">
+              <option value="1">Pain Tendo</option>
+              <option value="2">Itachi Uchiha</option>
+              <option value="3">Obito Uchiha</option>
+            </select>
+          </label>
+          <label for="best-moment" id="best-label">Most liked character?</label>
+          <input type="radio" value="1" name="best-moment" id="best-moment" checked />Naruto Vs Pain<br />
+          <input type="radio" value="2" name="best-moment" id="best-moment" />Itachi Uchiha Vs Sasuke Uchiha<br />
+          <input type="radio" value="3" name="best-moment" id="best-moment" />Obito Uchiha Vs Naruto<br />
+          <br /><br />
+          <label for="best-moment" id="best-label">Best episodes?</label>
+          <input type="checkbox" value="1" name="best-moment" id="best-moment" checked />1-100<br />
+          <input type="checkbox" value="2" name="best-moment" id="best-moment" />100-200<br />
+          <input type="checkbox" value="3" name="best-moment" id="best-moment" />200-300<br />
+          <input type="checkbox" value="4" name="best-moment" id="best-moment" />300-400<br />
+          <input type="checkbox" value="5" name="best-moment" id="best-moment" />400-500<br />
+          <br /><br />
+          <label for="coment" id="coment-label">
+            Any comments or suggestions?
+            <textarea name="coment" id="coment"></textarea>
+          </label>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
